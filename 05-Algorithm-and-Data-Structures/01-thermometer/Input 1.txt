@@ -1,0 +1,20 @@
+Algoritma Pseudocode Thermometer;
+
+INPUT temp #number = "86"
+INPUT temptype #string = "Farenheit"
+
+If type FORM temp IS NOT Number Then
+    display "Temperature yang dimasukkan salah!"
+Endif
+
+If temptype IS "Farenheit" Then
+    display ((temp - 32) * (5/9))
+ELSE If temptype IS "kelvin" Then
+    display (temp - 273.15)
+ELSE If temptype IS "celcius" Then
+    display (temp)
+ELSE
+    display "Tipe yang dimasukkan salah!"
+Endif
+
+display "Selesai"

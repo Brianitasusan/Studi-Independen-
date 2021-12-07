@@ -1,0 +1,19 @@
+Algoritma Pseudocode Fizzbuz;
+
+input Nomor #userinput N = "20"
+
+Nomor = 1
+While Nomor <= N
+    If Nomor MOD 3 IS 0 AND MOD 5 IS 0 Then
+        display "Fizzbuz"
+    ELSE If Nomor MOD 3 IS 0 Then
+        display "Fizz"
+    ELSE If Nomor MOD 5 IS 0 Then
+        display "Buzz"
+    ELSE 
+        display Nomor
+    Endif
+    Nomor = Nomor + 1
+Endwhile
+
+display "Selesai"

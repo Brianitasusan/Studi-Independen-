@@ -1,0 +1,48 @@
+Answer the following questions
+
+1. What does git clean do?
+git-clean = Menghapus file yang tidak terlacak dari pohon kerja
+
+2. *What do the -d and -f flags for git clean do?
+Gif clean -f = Menghapus file spesific yang tidak terlacak
+
+Git clean -fd = Menghapus file direktori yang tidak terlacak 
+
+3. What git command creates a branch?
+The git branch command can be used to create a new branch. When you want to start a new feature, you create a new branch off main using git branch new_branch . Once created you can then use git checkout new_branch to switch to that branch.
+
+4. What is the difference between a fast-forward and recursive merge?
+Recursive is the default merge strategy when pulling or merging one branch. Additionally this can detect and handle merges involving renames, but currently cannot make use of detected copies. This is the default merge strategy when pulling or merging one branch. 
+A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch. Instead of “actually” merging the branches, all Git has to do to integrate the histories is move (i.e., “fast forward”) the current branch tip up to the target branch tip. 
+
+5. What git command changes to another branch?
+The easiest way to switch branch on Git is to use the “git checkout” command and specify the name of the branch you want to switch to.
+A quick way of switching branch on Git is to use the “git switch” command and specify the name of the branch you want to switch to.
+git branch (Nama_branch) 
+
+4. What is the difference between a fast-forward and recursive merge?
+saat anda mencoba menggabungkan satu komit dengan komit yang dapat dicapai dengan mengikuti riwayat komit pertama, git menyederhanakan berbagai hal dengan menggerakkan pointer ke depan karena tidak ada pekerjaan yang berbeda untuk digabungkan ini disebut “fast forward".
+Dalam recursive merge, setelah Anda bercabang dan membuat beberapa komit, ada beberapa komit asli baru di 'master'.  Jadi, ketika saatnya untuk menggabungkan, git berulang di atas cabang dan membuat komit gabungan baru.  Komit gabungan terus memiliki dua orang tua
+
+5. What git command changes to another branch?
+Cara termudah untuk mengganti cabang di Git adalah dengan menggunakan perintah "git checkout" dan tentukan nama cabang yang ingin Anda alihkan.
+ Cara cepat untuk mengganti cabang di Git adalah dengan menggunakan perintah “git switch” dan tentukan nama cabang yang ingin Anda alihkan.
+
+6. How do you remove modified or deleted files from the working directory?
+Untuk menghapus perubahan atau file yang sudah dihapus dari working directory adalah git checkout -- path/to/folder
+
+7. What git command deletes a branch?
+Delete a branch with git branch -d <branch> 
+
+8. What does* the git diff command do?
+git checkout (Nama_Branch)
+
+9. How do you remove files from the staging area?
+git-rm = Menghapus file dari working tree dan index
+
+10.How do merge conflicts happen?
+Konflik gabungan adalah peristiwa yang terjadi ketika Git tidak dapat secara otomatis menyelesaikan perbedaan kode antara dua komit.  Ketika semua perubahan dalam kode terjadi pada baris yang berbeda atau pada file yang berbeda, Git akan berhasil menggabungkan komit tanpa bantuan Anda.
+
+1. Cara termudah untuk menyelesaikan file yang bentrok adalah dengan membukanya dan membuat perubahan yang diperlukan.
+2. Setelah mengedit file, kita dapat menggunakan perintah git add untuk menampilkan konten baru yang digabungkan.
+3. Langkah terakhir adalah membuat komit baru dengan bantuan perintah git commit.

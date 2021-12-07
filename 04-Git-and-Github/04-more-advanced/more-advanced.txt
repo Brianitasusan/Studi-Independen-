@@ -1,0 +1,19 @@
+Answer the following questions
+
+1. What is the difference between git reset and git revert. When would you use one over the other?
+git revert 
+ Perintah ini membuat komit baru yang membatalkan perubahan dari komit sebelumnya.  Perintah ini menambahkan riwayat baru ke proyek (tidak mengubah riwayat yang ada).
+
+ git reset
+ Perintah ini sedikit lebih rumit.  Itu benar-benar melakukan beberapa hal yang berbeda tergantung pada bagaimana itu dipanggil.  Ini memodifikasi indeks (yang disebut "area pementasan").  Atau itu mengubah komit yang ditunjuk oleh kepala cabang saat ini.  Perintah ini dapat mengubah riwayat yang ada (dengan mengubah komit yang dirujuk oleh cabang). 
+
+Jika komit telah dibuat di suatu tempat dalam sejarah proyek, dan Anda kemudian memutuskan bahwa komit itu salah dan seharusnya tidak dilakukan, maka git revert adalah alat untuk pekerjaan itu.  Ini akan membatalkan perubahan yang diperkenalkan oleh komit buruk, merekam "undo" dalam sejarah.Jika Anda telah memodifikasi file di pohon kerja Anda, tetapi belum melakukan perubahan, maka Anda dapat menggunakan git checkout untuk memeriksa salinan file yang baru dari repositori. Jika Anda telah membuat komit, tetapi belum membagikannya dengan orang lain dan Anda memutuskan tidak menginginkannya, maka Anda dapat menggunakan git reset untuk menulis ulang riwayat sehingga seolah-olah Anda tidak pernah membuat komit itu.Ini hanya beberapa skenario penggunaan yang mungkin.  Ada perintah lain yang dapat berguna dalam beberapa situasi, dan tiga perintah di atas juga memiliki kegunaan lain.
+
+2. What is the difference between git merge and git rebase. When would you use one over the other?
+Singkatnya, ketika ingin menggabungkan perubahan dari satu cabang Git ke cabang lain: Gunakan merge jika Anda ingin sekumpulan komit dikelompokkan dengan jelas bersama dalam riwayat.  Gunakan rebase saat Anda ingin menyimpan riwayat komit linier.  Jangan gunakan rebase di cabang publik/bersama.
+
+3. What is the difference between git stash pop and git stash apply. When would you use one over the other?
+Git stash pop membuang simpanan (paling atas, secara default) setelah menerapkannya, sedangkan git stash apply meninggalkannya di daftar simpanan untuk kemungkinan digunakan kembali nanti (atau Anda kemudian dapat git stash menjatuhkannya).
+
+4. What kinds of things can you do in interactive mode when rebasing?
+Rebasing interaktif dapat digunakan untuk mengubah komit dalam banyak cara seperti mengedit, menghapus, dan meremas.  Untuk memberi tahu Git tempat memulai rebase interaktif, gunakan SHA-1 atau indeks komit yang segera mendahului komit yang ingin Anda ubah.

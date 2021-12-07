@@ -1,0 +1,27 @@
+git config --global user.name "Brianitasusan"
+git config --global user.email "brianitabri@gmail.com" 
+mkdir Brianitasusan
+touch README.md
+git init
+git commit -m "Inisialisasi Git Repository"
+git branch cv
+git checkout cv
+touch cv.txt
+git init
+git commit -m "Inisialisasi CV"
+git add cv.txt
+git init
+git commit -m "Danone"
+git add cv.txt
+git init 
+git commit -m "Mayora"
+printf("\nSkilvul") >> cv.txt
+git init
+git commit -m "SkilVul"
+git checkout master
+git add README.md
+git init 
+git commit -m "update master pertama"
+git merge cv
+git push
+© 2021 GitHub, Inc.

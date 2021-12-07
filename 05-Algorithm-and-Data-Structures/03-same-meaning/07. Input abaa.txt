@@ -1,0 +1,21 @@
+Algoritma Pseudocode Same-meaning;
+
+input KATA #userinput = "abaa"
+
+Panjang_Kata = Len kata 
+
+iterationMin = Panjang_Kata - 1 
+iteration = 0 
+
+output = True
+
+while iterationMin < Panjang_Kata
+    If kata[iterationPlus] IS NOT kata[iterationMin] Then
+        output = False 
+    Endif
+    iterationMin --
+    iterationPlus ++
+Endwhile
+
+display output
+display "selesai"

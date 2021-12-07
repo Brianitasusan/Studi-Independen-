@@ -1,0 +1,16 @@
+Algoritma Pseudocode SkilvulGrading;
+
+input NILAI_SISWA  #userinput NILAI_SISWA = 68
+
+NILAI_KEATAS = (NILAI_SISWA + 5 ) - ((NILAI_SISWA + 5) % 5) 
+SELISIH = NILAI_KEATAS - NILAI_SISWA
+
+If NILAI_SISWA < 68 Then 
+    display "Nilai Akhir",NILAI_SISWA
+ElseIf (SELISIH < 3) Then
+    display "Nilai Akhir",NILAI_KEATAS
+Else
+    display "Nilai Akhir",NILAI_SISWA
+Endif
+
+display "Selesai"
